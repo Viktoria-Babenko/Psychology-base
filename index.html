@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>GLOBAL PRO MAX • Психологія • Mini-MBA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root{
+      --brand:#111; --accent:#ffd54f; --accent-dark:#f0c53c;
+      --primary:#4CAF50; --primary-dark:#388E3C; --danger:#F44336;
+      --bg:#ffffff; --muted:#666; --card:#fafafa; --line:#eee;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; font-family:Arial,system-ui,-apple-system,Segoe UI,Roboto,sans-serif; background:var(--bg); color:#111;}
+    header{padding:20px 16px; border-bottom:1px solid var(--line); background:#fff; position:sticky; top:0; z-index:5}
+    h1{margin:0 0 6px; font-size:22px; line-height:1.25}
+    .sub{color:var(--muted); font-size:14px}
+    .bar{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+    .bar button{
+      padding:10px 12px; border:none; border-radius:8px; background:var(--primary); color:#fff; cursor:pointer; font-weight:600
+    }
+    .bar button:hover{background:var(--primary-dark)}
+    .wrap{max-width:980px; margin:0 auto; padding:18px 16px 60px}
+    section{display:none; background:var(--card); padding:16px; border:1px solid var(--line); border-radius:12px; margin:14px 0}
+    section.active{display:block}
+    h2{margin-top:0; font-size:20px}
+    .grid{display:grid; gap:12px}
+    @media(min-width:860px){ .grid.cols-2{grid-template-columns:1fr 1fr} }
+    ul{margin:8px 0 0 18px}
+    .note{background:#FFF3CD; border:1px solid #FFE082; padding:12px; border-radius:10px}
+    .price{background:#fff; border:1px dashed var(--accent); padding:12px; border-radius:10px}
+    .pill{display:inline-block; background:#111; color:#fff; padding:4px 10px; border-radius:999px; font-size:12px; letter-spacing:.3px}
+    .btn{display:inline-block; background:var(--danger); color:#fff; padding:12px 16px; border-radius:10px; text-decoration:none; border:none; cursor:pointer; font-weight:700}
+    .btn:hover{filter:brightness(.95)}
+    .q{margin:10px 0 6px; font-weight:700}
+    textarea, input[type="text"]{
+      width:100%; padding:10px 12px; border:1px solid #ddd; border-radius:8px; font:inherit; background:#fff
+    }
+    .inline{display:flex; gap:8px; flex-wrap:wrap}
+    .chip{padding:8px 10px; border:1px solid #ddd; border-radius:999px; cursor:pointer; background:#fff}
+    .chip.active{border-color:#111; box-shadow:0 0 0 2px #1111}
+    .muted{color:var(--muted); font-size:13px}
+    .hr{height:1px; background:var(--line); margin:12px 0}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>GLOBAL PRO MAX (Психологія) • Міжнародна програма з Mini-MBA</h1>
+  <div class="sub">Онлайн • Практика з експертом • Верифікація та дипломи</div>
+  <div class="bar">
+    <button onclick="show('hello')">👋 Привітання</button>
+    <button onclick="show('segment')">🧩 Новачок / Досвідчений</button>
+    <button onclick="show('certs')">🏅 Друга сертифікація</button>
+    <button onclick="show('gpm')">🌟 Презентація GLOBAL PRO MAX</button>
+    <button onclick="show('skills')">🛠️ Навички</button>
+    <button onclick="show('practice')">🧪 Практика</button>
+    <button onclick="show('docs')">📄 Документи</button>
+    <button onclick="show('prices')">💰 Вартість</button>
+    <button onclick="show('cta')">👉 Залишити заявку</button>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="hello" class="section active">
+  <h2> Доброго дня, <span class="pill">[Ім’я]</span>!</h2>
+  <p>Я менеджер міжнародної онлайн-школи <strong>EXPERT</strong>. Бачу, що ви вже проходили у нас курс / міні-програму — це чудовий старт.</p>
+
+  <div class="q">1) Як вам навчання? Що найбільше відгукнулося і чому?</div>
+
+  <div class="q">2) З якою метою ви обирали цей курс? Який результат хотіли отримати?</div>
+
+  <div class="q">3) Що вже використовуєте з пройденого матеріалу у роботі/практиці?</div>
+
+  <div class="q">4) Ви зараз діючий психолог чи на етапі навчання/старту практики?</div>
+
+  <div class="q">5) З якими запитами клієнтів працюєте або плануєте працювати найближчим часом?</div>
+  <div class="q">6) Чого наразі бракує для впевненого результату?</div>
+
+  <div class="q">7) На який конкретний результат розраховуєте за 1–3 місяці?</div>
+
+  <p class="muted">Ваші відповіді допоможуть підібрати: підвищення кваліфікації для досвідчених або трек для старту професії з практикою та документами.</p>
+</section>
+
+  <section id="segment">
+    <h2>🧩 Траєкторія: <span class="pill">Новачок</span> / <span class="pill">Досвідчений психолог</span></h2>
+    <div class="grid cols-2">
+      <div>
+        <h3>Для новачків</h3>
+        <ul>
+          <li>Від нуля до впевненого старту практики</li>
+          <li>Протоколи сесій, етика, контракт</li>
+          <li>Наставництво + супервізія</li>
+          <li>Підготовка до перших платних консультацій</li>
+          <li>Документи: сертифікація + Mini-MBA</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Для досвідчених</h3>
+        <ul>
+          <li>Поглиблені модулі (ПТСР, сімейна, КПТ, дитяча, психосоматика)</li>
+          <li>Супервізійні групи, розбір складних кейсів</li>
+          <li>Продукти: пакети консультацій, групи, лекції</li>
+          <li>Підвищення кваліфікації + друга сертифікація</li>
+          <li>Документи для підтвердження експертності</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certs">
+    <h2>🏅 Друга сертифікація</h2>
+    <p>Тепер ви можете <strong>підвищити кваліфікацію</strong> як діючий спеціаліст або <strong>здобути професію</strong> з нуля — з подвійною верифікацією.</p>
+    <div class="note">
+      <ul>
+        <li>Незалежний онлайн-іспит (40 тестів)</li>
+        <li>Верифікований номер у документі</li>
+        <li>Диплом Mini-MBA: PDF або оригінал у шкіряній обкладинці</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="gpm">
+    <h2>🌟 GLOBAL PRO MAX (Психологія)</h2>
+    <p>Комплексна програма (35 курсів): базова, сімейна, дитяча, клінічна психологія, арт-терапія, тілесно-орієнтована терапія, психосоматика дорослих/дітей, логопедія, військова психологія, КПТ, позитивна психотерапія та ін.</p>
+  </section>
+
+  <section id="skills">
+    <h2>🛠️ Навички</h2>
+    <div class="grid cols-2">
+      <ul>
+        <li>Діагностика та планування терапії</li>
+        <li>Робота з тривогою, ПТСР, кризами</li>
+        <li>Сімейні кейси: кордони, конфлікти</li>
+        <li>Психосоматика: алгоритми роботи</li>
+      </ul>
+      <ul>
+        <li>Дитяча психологія + робота з батьками</li>
+        <li>Арт- та тілесні методики</li>
+        <li>Етика, документація, контракт</li>
+        <li>Маркетинг психолога</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="practice">
+    <h2>🧪 Практичний блок</h2>
+    <ul>
+      <li>Щотижневі Zoom-практики</li>
+      <li>Супервізія та розбір кейсів</li>
+      <li>Домашні завдання з фідбеком</li>
+      <li>Готові шаблони документів</li>
+    </ul>
+  </section>
+
+  <section id="docs">
+    <h2>📄 Документи</h2>
+    <div class="grid cols-2">
+      <div>
+        <h3>Отримаєте</h3>
+        <ul>
+          <li>Сертифікацію після іспиту</li>
+          <li>Диплом Mini-MBA (PDF/оригінал)</li>
+          <li>Верифікований номер</li>
+          <li>Додаток з годинами (для оригіналу)</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Не входить</h3>
+        <ul>
+          <li>«Купівля диплому» без навчання</li>
+          <li>Держліцензія на медичне лікування</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <h2>💰 Вартість</h2>
+    <div class="note">
+      <p><strong>Електронний диплом:</strong> <span style="color:#D32F2F">5000 грн</span> <del>10000 грн</del></p>
+      <p><strong>Оригінальний диплом:</strong> <span style="color:#D32F2F">8000 грн</span> <del>15000 грн</del></p>
+    </div>
+  </section>
+
+  
+
+</main>
+
+<script>
+  function show(id){
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    window.scrollTo({top:0, behavior:'smooth'});
+  }
+  function toggleChip(el){
+    el.classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
